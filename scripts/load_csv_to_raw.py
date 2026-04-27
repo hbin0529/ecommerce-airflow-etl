@@ -8,13 +8,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "data"
 
 TABLE_MAPPING = {
-    "olist_customers_dataset":"customers",
-    "olist_order_items_dataset":"order_items",
-    "olist_order_payments_dataset":"payments",
-    "olist_orders_dataset":"orders",
-    "olist_products_dataset":"products",
-    "olist_sellers_dataset":"sellers",
-    "product_category_name_translation":"category",
+    "olist_customers_dataset.csv":"customers",
+    "olist_order_items_dataset.csv":"order_items",
+    "olist_order_payments_dataset.csv":"payments",
+    "olist_orders_dataset.csv":"orders",
+    "olist_products_dataset.csv":"products",
+    "olist_sellers_dataset.csv":"sellers",
+    "product_category_name_translation.csv":"category_translation",
 }
 
 def load_csv_to_raw():
