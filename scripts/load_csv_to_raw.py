@@ -34,7 +34,7 @@ def load_csv_to_raw():
             name = table_name,
             con = engine,
             schema = "raw",
-            if_exists = "append",
+            if_exists = "replace",
             index = False,
             method = "multi",
             chunksize= 1000,
