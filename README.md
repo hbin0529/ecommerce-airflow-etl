@@ -239,6 +239,12 @@ ecommerce_etl_pipeline
 
 ---
 
+## 8. 실행 결과
+
+### 8.1 Airflow DAG 목록
+Airflow UI에서 `ecommerce_etl_pipeline` DAG가 정상적으로 등록된 것을 확인하였습니다.
+![Airflow DAG List](https://github.com/user-attachments/assets/ef0d62a3-0782-49fd-b204-0ab01e7ae419)
+
 ## 8. 실행 방법
 
 ### 8.1 저장소 클롬
