@@ -8,10 +8,10 @@ def get_engine():
     user = os.getenv("POSTGRES_USER")
     password = os.getenv("POSTGRES_PASSWORD")
     database = os.getenv("POSTGRES_DB")
-    host = os.getenv("POSTGRES_HOST", "localhost")
-    port = os.getenv("POSTGRES_PORT", "5432")
+    host = os.getenv("POSTGRES_HOST", "127.0.0.1")
+    port = os.getenv("POSTGRES_PORT", "15433")
 
-    if not all([user, password, database]):
+    if not all([user, password, database, host, port]):
         raise ValueError("Database environment variables are missing")
     
     db_url = f"postgresql+psycopg2://{user}:{password}@{host}:{port}/{database}"
